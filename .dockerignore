@@ -1,0 +1,5 @@
+node_modules
+custom_digitaljs/node_modules
+dist
+.vite
+.git
