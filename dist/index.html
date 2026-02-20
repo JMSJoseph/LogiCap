@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!-- Icons sizes for different devices -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicons/favicon-16x16.png"
+        />
+        <!-- <link rel="manifest" href="/favicons/site.webmanifest" /> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A logic simulator built for the CS1980 capstone course at pitt"
+        />
+        <meta
+            name="author"
+            content="Sean Shmulevich, Joseph Secosky, Gabriel Schmidt, Mason McGinnis"
+        />
+        <!-- This meta tag forces Internet Explorer to use the latest rendering engine available, ensuring compatibility with modern web standards. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta
+            name="keywords"
+            content="Logic, Simulation, University, Pittsburgh, Capstone, Javascript, Shmulevich, Undergraduate, Svelte, Svelvet, Interactive, Drag, Drop, Simulate, Olivera"
+        />
+
+        <!-- Metadata for the little window that shows when you share the website link with somebody -->
+        <meta property="og:title" content="LogiCap" />
+        <meta property="og:description" content="Javascript logic simulator" />
+        <meta property="og:image" content="./metaImage.png" />
+
+        <script>
+            function overrideStrayCat() {
+                // Save a string version of the original function
+                let fnStr = herekittykittykitty.toString()
+
+                // Patch the hardcoded path strings
+                fnStr = fnStr.replace(
+                    /var str_kitty_imgPath\s*=\s*"[^"]*";/,
+                    'var str_kitty_imgPath = "https://tetrageddon.com/straycat/straycat_images/";'
+                )
+
+                // Redefine the function using the patched version
+                window.herekittykittykitty = new Function('return ' + fnStr)()
+            }
+        </script>
+        <script
+            src="https://tetrageddon.com/straycat/straycat.js"
+            onload="overrideStrayCat()"
+        ></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script> -->
+        <!-- Not really sure what this does tbh -->
+        <!-- <meta property="og:url" content="https://www.example.com/page-url"> -->
+        <title>LogicAp</title>
+      <script type="module" crossorigin src="./assets/index-Ch7KMLis.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-CeA2CA4l.css">
+    <script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+
+    <body>
+        <div id="app"></div>
+    </body>
+</html>
