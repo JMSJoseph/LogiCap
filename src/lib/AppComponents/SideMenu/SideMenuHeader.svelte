@@ -47,7 +47,7 @@
 <div class="side_menu_header">
     <div style="display: flex;align-items:center">
         <img
-            src="./logicap.webp"
+            src={`${import.meta.env.BASE_URL}logicap.webp`}
             alt="app-logo"
             style="max-width: 18%;min-width:10%; aspect-ratio: 1 / 1;margin-right: 5%;margin-block:15px;"
         />
