@@ -40,7 +40,7 @@ export default defineConfig({
         // addVisualizer(),
         VitePWA(pwaConfig as any),
     ],
-    base: '/logicap/', // Use relative paths
+    base: './', // Use relative paths
     optimizeDeps: {
         exclude: ['custom_digitaljs'],
         include: ['jquery', 'lodash'],
