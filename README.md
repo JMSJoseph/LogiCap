@@ -13,6 +13,21 @@
 
 LogicAp is a fully functional logic simulator developed as part of the CS1980 course at the University of Pittsburgh in Spring 2025.
 
+## Docker / Coolify Deployment
+
+- The container serves the app on port `8080`.
+- The app is hosted at path prefix `/logicap/`.
+- Root (`/`) redirects to `/logicap/`.
+
+Local run:
+
+```bash
+docker build -t logicap .
+docker run --rm -p 8080:8080 logicap
+```
+
+Then open `http://localhost:8080/logicap/`.
+
 ## Contributors 🤝
 
 This project was designed and built by:
